@@ -1,4 +1,3 @@
-# si-206-imdb-final-project-asims25
 
 # Final Project Explanation
 
