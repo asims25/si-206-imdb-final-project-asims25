@@ -17,14 +17,13 @@ keys and a dictionary of datatypes(genre, release year, director, etc.) as the
 value.I then created a database of two tables: Movie_Information and
 Movie_Reviews.
 
-#Command Line Help
+# Command Line Help
 
 I then created a interactive part that queries data from this database. You can
 access two types of information in the command line. If you enter 'info all
 info <movie name>' into the command line, then all the data about that movie
 is printed in terminal. If you enter 'info <datatype> <movie name>' then only
-that specified datatype for that specified movie will be returned. There is
-also the visual option. If you enter 'graph reviews <release year>' then a  
+that specified datatype for that specified movie will be returned. There is also the visual option. If you enter 'graph reviews <release year>' then a  
 double bar graph of the top 20 rated movies for that specified year will be
 displayed. If you enter 'graph boxoffice <release year>' then a scatterplot
 displaying the top 20 grossing movies for that specified year will be displayed.
