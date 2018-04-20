@@ -43,6 +43,7 @@ class TestDatabase(unittest.TestCase):
         self.assertEqual(result_list[1][2], 'Bruce Willis')
 
         conn.close()
+class TestDatabse2(unittest.TestCase):
     def testMovieReviewsTable(self):
         conn = sqlite3.connect(DBNAME)
         cur = conn.cursor()
@@ -69,20 +70,5 @@ class TestDatabase(unittest.TestCase):
         self.assertEqual(result_list[57][1], 63.0)
 
         conn.close()
-# class TestInteractive(unittest.TestCase):
-#     def testGraphQuery1(self):
-#         user_input='graph reviews 2017'
-#         self.assertEqual(len(user_list), 20)
-#         self.assertIn('Coco', movie_list)
-#     def testGraphQuery2(self):
-#         user_input='graph boxoffice 2017'
-#         self.assertEqual(len(box_office), 20)
-#         self.assertIn('It',movie_list)
-#     def testGraphQuery3(self):
-#         user_input='graph genre 2017'
-#         self.assertEqual(len(action_counter), 44)
-#     def testGraphQuery4(self):
-#         user_input='graph oscars'
-#         self.assertEqual(len(oscarswon_list), 20)
-#         self.assertIn('Saving Private Ryan', movie_list)
+
 unittest.main(verbosity=0)
